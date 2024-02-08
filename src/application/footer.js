@@ -9,7 +9,7 @@ function Footer() {
 
   return (
     <div
-      className="footer px-5 py-10 flex flex-col justify-center items-center"
+      className="footer px-10 py-5 md:py-10 flex flex-col justify-center items-center"
       style={{ position: "fixed", right: 0, bottom: 0, width: "10%" }}
     >
       {isDropdownOpen && (

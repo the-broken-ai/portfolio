@@ -14,7 +14,7 @@ class Header extends React.Component {
           <div className="">
             <input
               type="text"
-              className="bg-[#0d1116]  w-[50vw] md:w-[20em] hover:w-auto md:hover:w-[60vw]  h-12 rounded-md border-[#334458]  border-2 px-3 text-white transition-all duration-300"
+              className="bg-[#0d1116]  w-[60vw] md:w-[20em] md:hover:w-[60vw]  h-12 rounded-md border-[#334458]  border-2 px-3 text-white transition-all duration-300"
               placeholder="Type @ to filter by people"
             />
           </div>

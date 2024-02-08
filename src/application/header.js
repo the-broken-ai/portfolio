@@ -19,7 +19,7 @@ class Header extends React.Component {
             />
           </div>
         </div>
-        <div className="h-10 w-10 mx-10 cursor-pointer hover:translate-y-[-2px] transition-transform">
+        <div className="h-10 w-10 mx-10 cursor-pointer hover:translate-y-[-2px] transition-transform hidden md:block">
           <img
             src="https://img.icons8.com/ios-filled/50/FFFFFF/speech-bubble--v1.png"
             alt=""

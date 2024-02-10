@@ -29,7 +29,7 @@ function Footer() {
         </div>
       )}
       <div
-        className={`circle rounded-full bg-blue-400 h-12 w-12 bottom-3 border-white cursor-pointer transition-transform ${
+        className={`circle rounded-full bg-blue-400 h-12 w-12 bottom-3 overflow-hidden border-white cursor-pointer transition-transform ${
           isDropdownOpen ? "rotate-90" : "rotate--90"
         }`}
         onClick={toggleDropdown}

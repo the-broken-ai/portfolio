@@ -29,9 +29,16 @@ function Footer() {
         </div>
       )}
       <div
-        className="circle rounded-full bg-blue-400 h-12 w-12 bottom-3 border-white cursor-pointer  hover:translate-y-[-2px] transition-transform"
+        className={`circle rounded-full bg-blue-400 h-12 w-12 bottom-3 border-white cursor-pointer transition-transform ${
+          isDropdownOpen ? "rotate-90" : "rotate--90"
+        }`}
         onClick={toggleDropdown}
-      ></div>
+      >
+        <img
+          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+          alt=""
+        />
+      </div>
     </div>
   );
 }

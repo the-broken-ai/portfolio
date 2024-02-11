@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// Import the Form component
 function Footer() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -24,8 +24,8 @@ function Footer() {
           <br />
           Item 5
           <br />
+          
           Item 6
-          <br />
         </div>
       )}
       <div
@@ -39,6 +39,8 @@ function Footer() {
           alt=""
         />
       </div>
+      {/* Render the Form component */}
+      
     </div>
   );
 }

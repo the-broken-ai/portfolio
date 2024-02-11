@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Project from "./Project.js";
+import Form from "./Form.js";
 
 const Body = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [posts, setPosts] = useState([]);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   useEffect(() => {
     fetch("/posts/?format=json", {
@@ -18,7 +24,12 @@ const Body = () => {
 
   return (
     <div className="bg-[#04080d] text-white h-full w-full  py-4">
-      {posts.results && posts.results.map((post) => <Project post={post} />)}
+      <button onClick={toggleDropdown}>Toggle Dropdown</button>
+      {isDropdownOpen && <Form />}
+      {!isDropdownOpen &&
+        posts.results &&
+        posts.results.map((post) => <Project post={post} />)}
+
       {/* {console.log(posts)} */}
     </div>
   );
